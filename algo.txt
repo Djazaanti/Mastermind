@@ -1,0 +1,40 @@
+/*********************************** algorithme du jeu mastermind en java **************************/
+
+// ce qu'il nous faut => objets et methodes  ( on en rajoutera au fur et à mésure de la compréhension)
+
+plateau du jeu => Plateau (tableau ou arraylist ) ;
+les pions de quatre couleurs => Pion (objets à caractère de couleur et de forme);
+
+
+on doit gagner des "manches" avec des coups
+manches =>int manche à incrémenter pour chaque nouveau mache
+coup => int coup
+
+
+La combinaison secrète est à être élaborée par un des joueurs (adversaire) => mains libre à l'utilisateur sur l'empalcement des pions. => le programme va s'en charger lui même.
+
+Le nombre de manches aussi est à mains libre;
+
+algo :
+	- insérer 4 pions dans la première ligne => premier ligne du tableau ou arraylist1;
+	- si la combinaison est incorrecte. 
+		+ utilisation de languette situé sur le coté 
+		+ si dans la proposition 1 ou plusieurs "pions de couleurs" sont bien dans la "combinaison " mais pas à la bonne 'place', 
+			* alors 'tirer "languette" blanche' selon le "nombre";
+		+ si dans la proposition 1 ou plusieurs "pions de couleurs" sont bien dans la " combinaison " et à la bonne 'place',
+			* alors 'tirer "languette" rouge' selon le nombre;
+	- continuer les propositions dans les autres lignes dans l'ordre.
+	- il a droit à 12 propositions uniquement;
+	
+	- si la combinaison est correcte
+		+ révèler le code 
+		+ manche terminée;
+
+
+
+
+
+/************** idées  *********/
+
+- utiliser une structure "tableau" pour le jeu,
+- utiliser un tableau de chiffres qui sont la solution et un tableau chiffres que l'utilisateur saisi
