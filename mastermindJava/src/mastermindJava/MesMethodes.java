@@ -1,43 +1,51 @@
 package mastermindJava;
 
+
+import java.util.Scanner;
+import java.util.Random;
+
 public class MesMethodes {
 
-	import java.util.*;
-	import Random 
+
+	/* déclarations des methodes à appeler pour le jeu*/
 	
-	// déclarations des methodes à appeler pour le jeu
-	int i;
-	private final int NB_PIONS = 4;
+	private static final int NB_PIONS = 4;
 	private final int NB_MANCHES = 10;
-	public int reste_manche = NB_MANCHES;
-	int proposer[];
-	int bonnecomb[];
+	int reste_manche = NB_MANCHES;
+	static int proposer[];
+	int bonnecombi[];
 	
 	Random random = new Random();
-	Scanner saisir = new Scanner(System.in);
+	static Scanner saisir = new Scanner(System.in);
+
+	/* Construcuteur de la class */
 	
-	
-	/* Combinaison proposée par le joueur */
-	public static proposer() {
+	public MesMethodes() {
 		
-		while(saisir.nextIn()>3) {
-			System.out.println("Nombre inférieur à 4");
-		}
-		for(i=0; i<NB_PIONS; i++) {
-			proposer[i] = saisir.nextInt();
-			return proposer[i];
-			}	
 	}
-	
-	/* combinaison solution  de la manche */
-	
-	public static void bonnecombinaison() {
-		for(i=0; i<NB_PIONS; i++) {
-			bonnecomb[i] = rand.nextInt(4 - 0 +1)+0;
+/* Combinaison proposée par le joueur */
+		
+		public static void proposition() {
+			for(int i = 0; i<NB_PIONS; i++) {
+				proposer[i] = saisir.nextInt();
+			}
 		}
+		
+		/* combinaison solution  de la manche */
+		
+		  void bonnecombinaison(){
+			for(int i=0; i<NB_PIONS; i++) {
+				bonnecombi[i] = random.nextInt(4 - 0 +1)+0;
+			}
+			}
+		
+		public void comparecombinaison() {
+			for(int i=0; i<NB_PIONS; i++) {
+				
 		}
-	
-	public 
+		
+	}
+		
 	
 	
 	
